@@ -14,7 +14,7 @@ db_sampler = dict(
     info_path=data_root + 'kitti_dbinfos_train.pkl',
     rate=1.0,
     prepare=dict(
-        filter_by_difficulty=[-1],
+        filter_by_difficulty=[],
         filter_by_min_points=dict(Car=5, Pedestrian=10, Cyclist=10)),
     classes=class_names,
     sample_groups=dict(Car=15, Pedestrian=10, Cyclist=10))

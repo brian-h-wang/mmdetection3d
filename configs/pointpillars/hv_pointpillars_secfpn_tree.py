@@ -41,7 +41,7 @@ db_sampler = dict(
     data_root=data_root,
     info_path=data_root + 'kitti_dbinfos_train.pkl',
     rate=1.0,
-    prepare=dict(filter_by_difficulty=[-1], filter_by_min_points=dict(Car=5)),
+    prepare=dict(filter_by_difficulty=[], filter_by_min_points=dict(Car=5)),
     sample_groups=dict(Car=15),
     classes=class_names)
 
